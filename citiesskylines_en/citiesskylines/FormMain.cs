@@ -154,7 +154,6 @@ namespace CitiesSkylines
                     {
                         SetMaximum d = new SetMaximum(SetMaximum);
                         this.Invoke(d, new object[] { lines.Count });
-
                     }
                     if (progress.InvokeRequired)
                     {

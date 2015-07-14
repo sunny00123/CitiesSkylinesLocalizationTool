@@ -38,11 +38,12 @@ namespace CitiesSkylines
             }
         }
 
+        const uint FORMAT_VERSION = 2u;
         public static void ExportFile(string path, Locale m_Locale)
         {
             using (Stream stream = new FileStream(path, FileMode.Create, FileAccess.Write))
             {
-                DataSerializer.Serialize(stream, DataSerializer.Mode.File, 2, m_Locale);
+                DataSerializer.Serialize(stream, DataSerializer.Mode.File, FORMAT_VERSION, m_Locale);
             }
         }
     }
