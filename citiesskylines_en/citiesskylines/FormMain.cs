@@ -26,7 +26,7 @@ namespace CitiesSkylines
         private void FormMain_Shown(object sender, EventArgs e)
         {
             version.Focus();
-            version.Text = "Ver. 1.3";
+            version.Text = "Ver. 1.3.1";
         }
 
         private void button_locale_Click(object sender, EventArgs e)

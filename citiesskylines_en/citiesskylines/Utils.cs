@@ -42,7 +42,7 @@ namespace CitiesSkylines
         {
             using (Stream stream = new FileStream(path, FileMode.Create, FileAccess.Write))
             {
-                DataSerializer.Serialize(stream, DataSerializer.Mode.File, 1, m_Locale);
+                DataSerializer.Serialize(stream, DataSerializer.Mode.File, 2, m_Locale);
             }
         }
     }
